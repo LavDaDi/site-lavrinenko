@@ -8,7 +8,7 @@
 html,body{
     font-family: Arial, Helvetica, sans-serif;
     height: 100%;
-    background: rgb(0, 102, 255) url('img/bg.jpg') no-repeat;
+    background: rgb(0, 102, 255) url('img/back.jpg') no-repeat;
     background-attachment: fixed;
     background-position: center center;               
     background-size: cover;  
@@ -22,7 +22,7 @@ html,body{
 
 .container {
     max-width: 1180px;
-    margin: 0px auto;
+    margin: 90px auto;
     padding: 0px 15px;
     flex: 1 0 auto;
 }
@@ -46,6 +46,38 @@ html,body{
     }
     
 }
+@media(max-width: 530px){
+    .three-block-items{
+        flex-direction: column;
+    }
+    .item-three-block {
+        background: #fff;
+        box-shadow: 0px 4px 18px rgba(88, 126, 236, 0.18);
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 30px 17px;
+        width: 250px;
+        margin: 0px auto;
+    }
+    .wrapper {
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+        min-width: 500px;
+    }
+    .text-footer {
+        font-size: 22px;
+        padding-top: 20px;
+        color: #fff;
+    }
+    .container {
+        margin: 0px auto;
+        flex: 1 0 auto;
+    }
+}
 
 .three-block {
     margin: 80px 0px 30px 0px;
@@ -56,15 +88,23 @@ html,body{
     text-align: center;
 }
 .block-title {
+    color: #fff;
+    font-size: 50px;
 }
 .block-text {
+    font-size: 25px;
     max-width: 600px;
-    margin: 0px auto;
+    margin: 5px auto;
+    color: #fff;
 }
 
 .block-text_padding{
     margin: 0px 0px 85px 0px;
-} 
+}
+
+.span-title{
+    color: rgb(174, 0, 255);
+}
 
 .three-block-items{
     display: flex;
@@ -106,7 +146,7 @@ html,body{
 
 .footer {
     background: rgb(41, 41, 41);
-    height: 60px;
+    height: 55px;
     flex: 0 0 auto;
 }
 .footer_container {
